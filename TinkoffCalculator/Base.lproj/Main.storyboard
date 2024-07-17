@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -238,7 +238,7 @@
                                     <imageReference key="image" image="clock" catalog="system" symbolScale="large"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="showCalculationsList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5aQ-vO-Nd5"/>
+                                    <action selector="showCalculationsList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r3E-Xi-XsV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -328,6 +328,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Калькулятор" id="D1L-Y5-KK4"/>
                     <connections>
+                        <outlet property="historyButton" destination="pgI-Fw-haI" id="gMX-ha-XLk"/>
                         <outlet property="label" destination="7jZ-hY-eLZ" id="EEj-tI-0BJ"/>
                     </connections>
                 </viewController>
@@ -343,42 +344,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKp-Dl-vYL">
-                                <rect key="frame" x="165.66666666666666" y="415.66666666666669" width="62" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4An-8d-fWk">
-                                <rect key="frame" x="151.33333333333334" y="500" width="90.666666666666657" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Закрыть"/>
-                                <connections>
-                                    <action selector="dismissVC:" destination="hxb-Q7-rXA" eventType="touchUpInside" id="Lu5-dj-CWZ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3A-Ht-Jsr">
-                                <rect key="frame" x="157" y="288" width="79" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OTp-6p-S2Y">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eUR-y8-JaM"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <color key="tintColor" systemColor="tintColor"/>
                         <constraints>
-                            <constraint firstItem="4An-8d-fWk" firstAttribute="centerX" secondItem="i4i-bF-cpZ" secondAttribute="centerX" id="RDJ-gg-ED3"/>
-                            <constraint firstItem="GKp-Dl-vYL" firstAttribute="top" secondItem="f3A-Ht-Jsr" secondAttribute="bottom" constant="106.66666666666669" id="TIb-ky-flo"/>
-                            <constraint firstItem="f3A-Ht-Jsr" firstAttribute="centerX" secondItem="i4i-bF-cpZ" secondAttribute="centerX" id="aYt-US-VDP"/>
-                            <constraint firstItem="GKp-Dl-vYL" firstAttribute="centerX" secondItem="i4i-bF-cpZ" secondAttribute="centerX" id="hEE-4m-m3y"/>
-                            <constraint firstItem="4An-8d-fWk" firstAttribute="top" secondItem="GKp-Dl-vYL" secondAttribute="bottom" constant="63.333333333333314" id="sqx-Zd-VfO"/>
-                            <constraint firstItem="GKp-Dl-vYL" firstAttribute="centerY" secondItem="i4i-bF-cpZ" secondAttribute="centerY" id="xKS-FR-rHi"/>
+                            <constraint firstItem="eUR-y8-JaM" firstAttribute="bottom" secondItem="OTp-6p-S2Y" secondAttribute="bottom" id="26U-1m-dh9"/>
+                            <constraint firstItem="eUR-y8-JaM" firstAttribute="trailing" secondItem="OTp-6p-S2Y" secondAttribute="trailing" id="Bwu-bO-thY"/>
+                            <constraint firstItem="OTp-6p-S2Y" firstAttribute="top" secondItem="eUR-y8-JaM" secondAttribute="top" id="f9p-Hi-w8l"/>
+                            <constraint firstItem="OTp-6p-S2Y" firstAttribute="leading" secondItem="eUR-y8-JaM" secondAttribute="leading" id="u7B-Mu-Fpt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Прошлые вычисления" id="5yA-wy-9zv"/>
                     <connections>
-                        <outlet property="calculationLabel" destination="GKp-Dl-vYL" id="o2f-xQ-gKc"/>
+                        <outlet property="tableView" destination="OTp-6p-S2Y" id="LlW-IE-K37"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wG4-rv-fQY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
