@@ -8,7 +8,6 @@
 import Foundation
 
 struct Calculation {
-    let date: Date
     let expression: [CalculationHistoryItem]
     let result: Double
 }
