@@ -87,11 +87,11 @@ extension CalculationsListViewController: UITableViewDelegate {
 
 extension CalculationsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return calculations.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return calculations.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
