@@ -45,7 +45,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var historyButton: UIButton!
     
     var calculatingHistory : [CalculationHistoryItem] = []
-    var calculations: [(expression: [CalculationHistoryItem], result: Double)] = []
+    var calculations: [Calculation] = []
+    
+    
+    let calculationHistoryStorage = CalculationHistoryStorage()
     
     lazy var numberFormatter: NumberFormatter = {
         var numberFormatter = NumberFormatter()
@@ -97,6 +100,7 @@ class ViewController: UIViewController {
         calculatingHistory.removeAll()
         
         resetTextLabel()
+        
     }
     
     @IBAction func calculatebuttonPressed() {
@@ -113,7 +117,9 @@ class ViewController: UIViewController {
             let result = try calculate()
             
             label.text = numberFormatter.string(from: NSNumber(value: result))
-            calculations.append((calculatingHistory, result))
+            let newCalculation = Calculation(expression: calculatingHistory, result: result)
+            calculations.append(newCalculation)
+            calculationHistoryStorage.setHistory(calculation: calculations)
         } catch {
             label.text = "Ошибка"
         }
@@ -156,6 +162,7 @@ class ViewController: UIViewController {
         resetTextLabel()
         
         historyButton.accessibilityIdentifier = "HistoryButton"
+        calculations = calculationHistoryStorage.loadHistory()
     }
     
     override func viewWillAppear(_ animated: Bool) {

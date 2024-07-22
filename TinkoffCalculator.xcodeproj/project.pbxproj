@@ -22,6 +22,7 @@
 		DDB8F1302B8BFE9A001E56D4 /* TinkoffCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8F12F2B8BFE9A001E56D4 /* TinkoffCalculatorUITests.swift */; };
 		DDB8F1322B8BFE9A001E56D4 /* TinkoffCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8F1312B8BFE9A001E56D4 /* TinkoffCalculatorUITestsLaunchTests.swift */; };
 		DDB8F13F2B8BFEA4001E56D4 /* TinkoffCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8F13E2B8BFEA4001E56D4 /* TinkoffCalculatorTests.swift */; };
+		DDE0BA902C4E7BF400F34433 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0BA8F2C4E7BF400F34433 /* Storage.swift */; };
 		DDFDDDF12BAF47F1006D6C02 /* CalculationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDDDF02BAF47F1006D6C02 /* CalculationsListViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		DDB8F1312B8BFE9A001E56D4 /* TinkoffCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkoffCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DDB8F13C2B8BFEA4001E56D4 /* TinkoffCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkoffCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB8F13E2B8BFEA4001E56D4 /* TinkoffCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkoffCalculatorTests.swift; sourceTree = "<group>"; };
+		DDE0BA8F2C4E7BF400F34433 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		DDFDDDF02BAF47F1006D6C02 /* CalculationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 		DDB8F1142B8BD906001E56D4 /* TinkoffCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				DDE0BA8E2C4E7BB200F34433 /* Storage */,
 				DD14110F2C47DC9F009A85F4 /* History */,
 				DDB8F1152B8BD906001E56D4 /* AppDelegate.swift */,
 				DDB8F1172B8BD906001E56D4 /* SceneDelegate.swift */,
@@ -146,6 +149,14 @@
 				DDB8F13E2B8BFEA4001E56D4 /* TinkoffCalculatorTests.swift */,
 			);
 			path = TinkoffCalculatorTests;
+			sourceTree = "<group>";
+		};
+		DDE0BA8E2C4E7BB200F34433 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				DDE0BA8F2C4E7BF400F34433 /* Storage.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 				DDB8F1162B8BD906001E56D4 /* AppDelegate.swift in Sources */,
 				DDB8F1182B8BD906001E56D4 /* SceneDelegate.swift in Sources */,
 				DD1411112C47DCC0009A85F4 /* HistoryTableViewCell.swift in Sources */,
+				DDE0BA902C4E7BF400F34433 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

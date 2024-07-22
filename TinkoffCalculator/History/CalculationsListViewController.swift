@@ -10,7 +10,8 @@ import UIKit
 
 class CalculationsListViewController: UIViewController {
     
-    var calculations: [(expression: [CalculationHistoryItem], result: Double)] = []
+    var calculations: [Calculation] = []
+    
     @IBOutlet weak var calculationLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
@@ -37,10 +38,10 @@ class CalculationsListViewController: UIViewController {
         let tableHeaderView = UIView()
         tableHeaderView.frame = CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 30)
         
-        var dateLabel: UILabel = UILabel()
+        let dateLabel: UILabel = UILabel()
         dateLabel.frame = CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 30)
-        var date = Date()
-        var OutputFormat = DateFormatter()
+        let date = Date()
+        let OutputFormat = DateFormatter()
         OutputFormat.dateFormat = "dd.MM.yyyy"
         dateLabel.text = OutputFormat.string(from: date)
         
@@ -86,6 +87,10 @@ extension CalculationsListViewController: UITableViewDelegate {
 
 extension CalculationsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return calculations.count
     }
     
