@@ -40,7 +40,7 @@ extension CalculationHistoryItem: Codable {
     }
     
     init(from decoder: any Decoder) throws {
-        var container = try decoder.container(keyedBy: CodingKeys.self)
+        let container = try decoder.container(keyedBy: CodingKeys.self)
         
         if let number = try container.decodeIfPresent(Double.self, forKey: .number) {
             self = .number(number)
