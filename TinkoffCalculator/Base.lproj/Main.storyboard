@@ -175,7 +175,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8OH-Lb-dru">
-                                <rect key="frame" x="147.33333333333331" y="353.33333333333331" width="147.33333333333331" height="93"/>
+                                <rect key="frame" x="196.66666666666666" y="353.33333333333331" width="97.999999999999972" height="93"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -229,7 +229,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgI-Fw-haI">
-                                <rect key="frame" x="0.0" y="353.33333333333331" width="147.33333333333334" height="93"/>
+                                <rect key="frame" x="0.0" y="353.33333333333331" width="98.333333333333329" height="93"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                                 <accessibility key="accessibilityConfiguration" identifier="historyButton"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -241,16 +241,31 @@
                                     <action selector="showCalculationsList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r3E-Xi-XsV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTm-gc-57T">
+                                <rect key="frame" x="98.333333333333343" y="353.33333333333331" width="98.333333333333343" height="93"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pi">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clearbuttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="lhj-sk-7yJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="QV9-Dz-wgl" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="01k-Po-fOv"/>
+                            <constraint firstItem="8OH-Lb-dru" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="1pQ-UK-7pE"/>
+                            <constraint firstItem="TTm-gc-57T" firstAttribute="bottom" secondItem="8OH-Lb-dru" secondAttribute="bottom" id="2iW-HS-cme"/>
                             <constraint firstItem="5lQ-M6-rRx" firstAttribute="bottom" secondItem="vCP-O4-mei" secondAttribute="top" id="2uO-Ul-D4c"/>
+                            <constraint firstItem="8OH-Lb-dru" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pgI-Fw-haI" secondAttribute="trailing" constant="8" symbolic="YES" id="3W7-cI-g9r"/>
+                            <constraint firstItem="TTm-gc-57T" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="3q0-g5-i9q"/>
                             <constraint firstItem="Nw3-8m-Yy5" firstAttribute="leading" secondItem="hl7-sA-QR2" secondAttribute="trailing" id="4Pu-bU-nXD"/>
                             <constraint firstItem="LPS-sL-7tt" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="4uM-D2-6ub"/>
                             <constraint firstItem="LPS-sL-7tt" firstAttribute="top" secondItem="7jZ-hY-eLZ" secondAttribute="bottom" constant="20" id="70T-Jb-Q16"/>
-                            <constraint firstItem="pgI-Fw-haI" firstAttribute="height" secondItem="8OH-Lb-dru" secondAttribute="height" id="9fX-Op-8BL"/>
                             <constraint firstItem="5lQ-M6-rRx" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="Cxh-aw-r8G"/>
                             <constraint firstItem="LPS-sL-7tt" firstAttribute="leading" secondItem="8OH-Lb-dru" secondAttribute="trailing" id="D3z-DV-ao5"/>
                             <constraint firstItem="Phv-St-NkI" firstAttribute="bottom" secondItem="Nw3-8m-Yy5" secondAttribute="top" id="Dkx-Sg-PDZ"/>
@@ -269,6 +284,7 @@
                             <constraint firstItem="foV-n0-oO1" firstAttribute="leading" secondItem="Nw3-8m-Yy5" secondAttribute="trailing" id="MU5-Ld-vi2"/>
                             <constraint firstItem="hl7-sA-QR2" firstAttribute="bottom" secondItem="6fI-n2-QdB" secondAttribute="top" id="N3V-Xq-X3w"/>
                             <constraint firstItem="dwj-07-eg4" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="N6x-Sb-JDE"/>
+                            <constraint firstItem="pgI-Fw-haI" firstAttribute="trailing" secondItem="5lQ-M6-rRx" secondAttribute="trailing" id="NB6-3R-BvG"/>
                             <constraint firstItem="Phv-St-NkI" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="NS9-Wh-v1S"/>
                             <constraint firstItem="Oin-Ye-OTL" firstAttribute="bottom" secondItem="Phv-St-NkI" secondAttribute="top" id="Okq-6S-nxp"/>
                             <constraint firstItem="hl7-sA-QR2" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="QXw-4B-lK0"/>
@@ -281,7 +297,6 @@
                             <constraint firstItem="Phv-St-NkI" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="VYG-8d-5bz"/>
                             <constraint firstItem="DHo-0Z-GgM" firstAttribute="leading" secondItem="n0k-nP-V2a" secondAttribute="trailing" id="Vrv-4V-FM9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LPS-sL-7tt" secondAttribute="trailing" symbolic="YES" id="WWG-8n-g4v"/>
-                            <constraint firstItem="pgI-Fw-haI" firstAttribute="trailing" secondItem="8OH-Lb-dru" secondAttribute="leading" id="Wkv-wz-ab2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0eg-VF-BFU" secondAttribute="trailing" symbolic="YES" id="Wtw-PM-ySH"/>
                             <constraint firstItem="hl7-sA-QR2" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="Y2z-Kp-uSe"/>
                             <constraint firstItem="pgI-Fw-haI" firstAttribute="bottom" secondItem="8OH-Lb-dru" secondAttribute="bottom" id="YEq-Va-tav"/>
@@ -293,6 +308,9 @@
                             <constraint firstItem="5lQ-M6-rRx" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="aLS-wR-b8a"/>
                             <constraint firstItem="DHo-0Z-GgM" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="b5M-Jd-oDj"/>
                             <constraint firstItem="n0k-nP-V2a" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="b9d-mN-Q46"/>
+                            <constraint firstItem="pgI-Fw-haI" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="cFK-nP-pKq"/>
+                            <constraint firstItem="TTm-gc-57T" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="dq9-y1-9sM"/>
+                            <constraint firstItem="LPS-sL-7tt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TTm-gc-57T" secondAttribute="trailing" constant="8" symbolic="YES" id="e8b-hb-NgP"/>
                             <constraint firstItem="zTo-jJ-F6v" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="fPY-wa-Rvk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n0k-nP-V2a" secondAttribute="bottom" id="fyj-Aa-AJw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7jZ-hY-eLZ" secondAttribute="trailing" constant="20" id="g5w-LN-giL"/>
@@ -308,7 +326,6 @@
                             <constraint firstItem="QV9-Dz-wgl" firstAttribute="leading" secondItem="dwj-07-eg4" secondAttribute="trailing" id="m18-dU-858"/>
                             <constraint firstItem="8OH-Lb-dru" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="mGO-kE-yzJ"/>
                             <constraint firstItem="0eg-VF-BFU" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="mTE-u1-iDd"/>
-                            <constraint firstItem="pgI-Fw-haI" firstAttribute="width" secondItem="8OH-Lb-dru" secondAttribute="width" id="qOe-ia-pxu"/>
                             <constraint firstItem="6fI-n2-QdB" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="rab-5O-1CO"/>
                             <constraint firstItem="LPS-sL-7tt" firstAttribute="bottom" secondItem="JfU-dK-0Pq" secondAttribute="top" id="rvq-z1-VA5"/>
                             <constraint firstItem="JfU-dK-0Pq" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="sFP-L1-uGN"/>
@@ -320,6 +337,8 @@
                             <constraint firstItem="n0k-nP-V2a" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="v1t-q6-azx"/>
                             <constraint firstItem="vCP-O4-mei" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="vff-fT-rKU"/>
                             <constraint firstItem="6fI-n2-QdB" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.25" id="x0D-kH-uGO"/>
+                            <constraint firstItem="pgI-Fw-haI" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="x8G-xW-aVL"/>
+                            <constraint firstItem="TTm-gc-57T" firstAttribute="leading" secondItem="n0k-nP-V2a" secondAttribute="leading" id="xgh-js-NDz"/>
                             <constraint firstItem="zTo-jJ-F6v" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.13" id="yg8-nM-0jv"/>
                             <constraint firstItem="Oin-Ye-OTL" firstAttribute="leading" secondItem="5lQ-M6-rRx" secondAttribute="trailing" id="ygK-ee-25L"/>
                             <constraint firstItem="zTo-jJ-F6v" firstAttribute="bottom" secondItem="dwj-07-eg4" secondAttribute="top" id="yx0-R1-usc"/>
@@ -394,16 +413,16 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

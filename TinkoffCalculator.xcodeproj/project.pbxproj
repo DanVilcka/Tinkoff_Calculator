@@ -23,6 +23,23 @@
 		DDB8F1322B8BFE9A001E56D4 /* TinkoffCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8F1312B8BFE9A001E56D4 /* TinkoffCalculatorUITestsLaunchTests.swift */; };
 		DDB8F13F2B8BFEA4001E56D4 /* TinkoffCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8F13E2B8BFEA4001E56D4 /* TinkoffCalculatorTests.swift */; };
 		DDE0BA902C4E7BF400F34433 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0BA8F2C4E7BF400F34433 /* Storage.swift */; };
+		DDF6CF322C4FF0C900F1C4AE /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0BA8F2C4E7BF400F34433 /* Storage.swift */; };
+		DDF6CF332C4FF0CA00F1C4AE /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0BA8F2C4E7BF400F34433 /* Storage.swift */; };
+		DDF6CF342C4FF0CE00F1C4AE /* CalculationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDDDF02BAF47F1006D6C02 /* CalculationsListViewController.swift */; };
+		DDF6CF352C4FF0CE00F1C4AE /* CalculationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDDDF02BAF47F1006D6C02 /* CalculationsListViewController.swift */; };
+		DDF6CF362C4FF0D100F1C4AE /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1411102C47DCC0009A85F4 /* HistoryTableViewCell.swift */; };
+		DDF6CF372C4FF0D100F1C4AE /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1411102C47DCC0009A85F4 /* HistoryTableViewCell.swift */; };
+		DDF6CF382C4FF0DE00F1C4AE /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1411122C47DE29009A85F4 /* HistoryTableViewCell.xib */; };
+		DDF6CF392C4FF0DE00F1C4AE /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1411122C47DE29009A85F4 /* HistoryTableViewCell.xib */; };
+		DDF6CF3A2C4FF0E000F1C4AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8F1152B8BD906001E56D4 /* AppDelegate.swift */; };
+		DDF6CF3B2C4FF0E100F1C4AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8F1152B8BD906001E56D4 /* AppDelegate.swift */; };
+		DDF6CF3C2C4FF0E300F1C4AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8F1172B8BD906001E56D4 /* SceneDelegate.swift */; };
+		DDF6CF3D2C4FF0E400F1C4AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8F1172B8BD906001E56D4 /* SceneDelegate.swift */; };
+		DDF6CF3E2C4FF0E900F1C4AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB8F11E2B8BD907001E56D4 /* Assets.xcassets */; };
+		DDF6CF3F2C4FF0EA00F1C4AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB8F11E2B8BD907001E56D4 /* Assets.xcassets */; };
+		DDF6CF402C4FF0ED00F1C4AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB8F1202B8BD907001E56D4 /* LaunchScreen.storyboard */; };
+		DDF6CF412C4FF0ED00F1C4AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB8F1202B8BD907001E56D4 /* LaunchScreen.storyboard */; };
+		DDF6CF432C510ECF00F1C4AE /* alertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF6CF422C510ECF00F1C4AE /* alertView.swift */; };
 		DDFDDDF12BAF47F1006D6C02 /* CalculationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDDDF02BAF47F1006D6C02 /* CalculationsListViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +77,7 @@
 		DDB8F13C2B8BFEA4001E56D4 /* TinkoffCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkoffCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB8F13E2B8BFEA4001E56D4 /* TinkoffCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkoffCalculatorTests.swift; sourceTree = "<group>"; };
 		DDE0BA8F2C4E7BF400F34433 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		DDF6CF422C510ECF00F1C4AE /* alertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertView.swift; sourceTree = "<group>"; };
 		DDFDDDF02BAF47F1006D6C02 /* CalculationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +148,7 @@
 				DDB8F11E2B8BD907001E56D4 /* Assets.xcassets */,
 				DDB8F1202B8BD907001E56D4 /* LaunchScreen.storyboard */,
 				DDB8F1232B8BD907001E56D4 /* Info.plist */,
+				DDF6CF422C510ECF00F1C4AE /* alertView.swift */,
 			);
 			path = TinkoffCalculator;
 			sourceTree = "<group>";
@@ -274,6 +293,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF6CF382C4FF0DE00F1C4AE /* HistoryTableViewCell.xib in Resources */,
+				DDF6CF402C4FF0ED00F1C4AE /* LaunchScreen.storyboard in Resources */,
+				DDF6CF3E2C4FF0E900F1C4AE /* Assets.xcassets in Resources */,
 				DDAC44572B930CC900DFDAC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +304,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF6CF392C4FF0DE00F1C4AE /* HistoryTableViewCell.xib in Resources */,
+				DDF6CF412C4FF0ED00F1C4AE /* LaunchScreen.storyboard in Resources */,
+				DDF6CF3F2C4FF0EA00F1C4AE /* Assets.xcassets in Resources */,
 				DDAC44582B930CCA00DFDAC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDFDDDF12BAF47F1006D6C02 /* CalculationsListViewController.swift in Sources */,
+				DDF6CF432C510ECF00F1C4AE /* alertView.swift in Sources */,
 				DDB8F11A2B8BD906001E56D4 /* ViewController.swift in Sources */,
 				DDB8F1162B8BD906001E56D4 /* AppDelegate.swift in Sources */,
 				DDB8F1182B8BD906001E56D4 /* SceneDelegate.swift in Sources */,
@@ -306,9 +332,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF6CF362C4FF0D100F1C4AE /* HistoryTableViewCell.swift in Sources */,
 				DDAC44552B930CBC00DFDAC9 /* ViewController.swift in Sources */,
+				DDF6CF322C4FF0C900F1C4AE /* Storage.swift in Sources */,
+				DDF6CF342C4FF0CE00F1C4AE /* CalculationsListViewController.swift in Sources */,
+				DDF6CF3A2C4FF0E000F1C4AE /* AppDelegate.swift in Sources */,
 				DDB8F1322B8BFE9A001E56D4 /* TinkoffCalculatorUITestsLaunchTests.swift in Sources */,
 				DDB8F1302B8BFE9A001E56D4 /* TinkoffCalculatorUITests.swift in Sources */,
+				DDF6CF3C2C4FF0E300F1C4AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,8 +347,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF6CF3B2C4FF0E100F1C4AE /* AppDelegate.swift in Sources */,
+				DDF6CF3D2C4FF0E400F1C4AE /* SceneDelegate.swift in Sources */,
+				DDF6CF352C4FF0CE00F1C4AE /* CalculationsListViewController.swift in Sources */,
 				DDAC44562B930CBE00DFDAC9 /* ViewController.swift in Sources */,
 				DDB8F13F2B8BFEA4001E56D4 /* TinkoffCalculatorTests.swift in Sources */,
+				DDF6CF332C4FF0CA00F1C4AE /* Storage.swift in Sources */,
+				DDF6CF372C4FF0D100F1C4AE /* HistoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

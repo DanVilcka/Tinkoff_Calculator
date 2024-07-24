@@ -95,6 +95,7 @@ extension CalculationsListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        calculations.reverse()
         let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryTableViewCell", for: indexPath) as! HistoryTableViewCell
         let historyItem = calculations[indexPath.row]
         cell.configure(with: expressionToString(historyItem.expression), result: String(historyItem.result))
